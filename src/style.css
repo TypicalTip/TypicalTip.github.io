@@ -134,7 +134,10 @@ body {
   padding-left: 3.125rem;
   padding-right: 3.125rem;
 
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-title {
@@ -153,7 +156,7 @@ body {
   background: none;
   color: var(--title-color);
 
-  margin-top: -1.75rem;
+  margin-top: -1.95rem;
   font-size: 1.35rem;
   font-weight: bold;
   font-style: italic;
