@@ -1,0 +1,3 @@
+TypicalTip is a braindead developer who is currently developing games on the platform Roblox.
+They are skilled in Luau and experienced with OSS scripting.
+They are also a web developer who is currently learning HTML, CSS and JavaScript.
