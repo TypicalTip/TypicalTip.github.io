@@ -1,5 +1,5 @@
 * {
-  background-color: rgb(31, 32, 34);
+  background-color: rgb(32, 34, 39);
   box-sizing: border-box;
 
   font-family: Arial, Helvetica, sans-serif;
@@ -7,15 +7,74 @@
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 .navbar {
-  background-color: rgb(0, 0, 0);
+  /* -- Variables -- */
+  --navbar-color: rgb(15, 15, 15);
+
+  /* -- Navbar -- */
+  background-color: var(--navbar-color);
+  box-shadow: 0 1px 8px var(--navbar-color);
 
   position: fixed;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
 
   width: 100%;
+  padding: 0.75rem 50px;
+  z-index: 1;
+}
+
+.navbar-title {
+  /* -- Variables -- */
+  --y-padding: 0.3125rem;
+
+  /* -- Navbar Title -- */
+  background: none;
+  color: rgb(255, 255, 255);
+
+  padding-top: var(--y-padding);
+  padding-bottom: var(--y-padding);
+  margin-right: 1rem;
+  white-space: nowrap;
+
+  text-decoration: none;
+  font-size: 1.75rem;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.navbar-buttons {
+  background: none;
+
+  margin-left: auto;
+}
+
+.navbar-buttons ul {
+  background: none;
+}
+
+.navbar-buttons li {
+  background: none;
+
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.navbar-buttons a {
+  background: none;
+  color: rgb(199, 199, 199);
+
+  text-decoration: none;
+
+  transition: all 0.25s ease 0s;
+}
+
+.navbar-buttons a:hover {
+  background: none;
+  color: rgb(255, 255, 255);
 }
