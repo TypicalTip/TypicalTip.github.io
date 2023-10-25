@@ -114,7 +114,7 @@ body {
 /* -- BANNERS -- */
 .banner {
   width: 100%;
-  height: 46rem;
+  padding-bottom: 4rem;
 
   background-image: linear-gradient(
       rgba(68, 68, 68, 0.5),
