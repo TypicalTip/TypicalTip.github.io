@@ -210,10 +210,34 @@ body {
 }
 
 .banner-socials a:hover {
-  background-color: rgb(70, 70, 70);
+  background-color: rgb(54, 54, 54);
 }
 
 .banner-socials img {
   background: none;
   display: block;
+}
+
+/* -- ABOUT -- */
+.about {
+  color: rgb(255, 255, 255);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.about-container {
+  background: none;
+}
+
+.about-title {
+  align-self: center;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.7;
 }

@@ -26,8 +26,10 @@
 
     <!-- Setup open meta tags, which will appear 
       when users share the link of the webpage -->
-    <meta property="og:image" content="assets/icons/favicon.png" />
-    <meta name="twitter:image" content="assets/icons/favicon.png" />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/120828956?v=4"
+    />
 
     <!-- Setup the keywords and charset -->
     <meta name="keyworkds" content="HTML, CSS" />
@@ -77,15 +79,26 @@
         </p>
 
         <div class="banner-socials">
-          <a href="https://twitter.com/TypicallyTip" target="_blank">
+          <!-- aria-label is a feature to be made later on
+        when Javascript is implemented -->
+
+          <a
+            href="https://twitter.com/TypicallyTip"
+            target="_blank"
+            aria-label="Twitter/X Account"
+          >
             <img
               src="assets/socials/twitter.png"
-              alt="Twitter"
+              alt="Twitter/X"
               width="30px"
               height="30px"
             />
           </a>
-          <a href="https://youtube.com/@TypicalTip" target="_blank">
+          <a
+            href="https://youtube.com/@TypicalTip"
+            target="_blank"
+            aria-label="Youtube Channel"
+          >
             <img
               src="assets/socials/youtube.png"
               alt="Youtube"
@@ -93,10 +106,26 @@
               height="30px"
             />
           </a>
-          <a href="https://github.com/TypicalTip" target="_blank">
+          <a
+            href="https://discordapp.com/users/499194571901763586"
+            target="_blank"
+            aria-label="Discord Account"
+          >
+            <img
+              src="assets/socials/discord.png"
+              alt="Discord"
+              width="30px"
+              height="30px"
+            />
+          </a>
+          <a
+            href="https://github.com/TypicalTip"
+            target="_blank"
+            aria-label="GitHub Profile"
+          >
             <img
               src="assets/socials/github.png"
-              alt="Github"
+              alt="GitHub"
               width="30px"
               height="30px"
             />
@@ -104,10 +133,36 @@
           <a
             href="https://www.roblox.com/users/132381335/profile"
             target="_blank"
+            aria-label="Roblox Profile"
           >
             <img
               src="assets/socials/roblox.png"
-              alt="Github"
+              alt="Roblox"
+              width="30px"
+              height="30px"
+            />
+          </a>
+
+          <a
+            href="https://devforum.roblox.com/u/TheTipArrowNT/summary"
+            target="_blank"
+            aria-label="DevForum Profile"
+          >
+            <img
+              src="assets/socials/devforum.png"
+              alt="DevForum"
+              width="30px"
+              height="30px"
+            />
+          </a>
+          <a
+            href="https://steamcommunity.com/id/TheTipArrowNT"
+            target="_blank"
+            aria-label="Steam Profile"
+          >
+            <img
+              src="assets/socials/steam.png"
+              alt="Steam"
               width="30px"
               height="30px"
             />
@@ -115,5 +170,25 @@
         </div>
       </div>
     </section>
+
+    <section class="about">
+      <div class="about-container">
+        <h1 class="about-title">About Me</h1>
+        <p class="about-text">
+          I am a braindead developer who is experienced in coding!
+          <br />
+          I love creating things and I consider it a hobby!
+        </p>
+      </div>
+
+      <img
+        class="about-image"
+        src="assets/banners/headicon.jpg"
+        alt="TypicalTip's Head Icon"
+        height="235px"
+        width="235px"
+      />
+    </section>
+    <hr />
   </body>
 </html>
