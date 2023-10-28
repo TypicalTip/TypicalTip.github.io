@@ -12,7 +12,26 @@ body {
   padding: 0;
 }
 
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+
+  width: 85%;
+}
+
 /* -- VARIABLES -- */
+.flexrow {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.flexcolumn {
+  padding: 5px;
+  margin-top: 10px;
+}
+
 .round-circle {
   border-radius: 50%;
 }
@@ -20,7 +39,7 @@ body {
 /* -- NAVBARS -- */
 .navbar {
   /* -- Variables -- */
-  --navbar-color: rgb(15, 15, 15);
+  --navbar-color: rgb(22, 22, 22);
 
   /* -- Navbar -- */
   background-color: var(--navbar-color);
@@ -124,6 +143,8 @@ body {
     url(../assets/banners/winterbanner.gif);
   background-size: cover;
   filter: brightness(110%);
+
+  box-shadow: 0 1px 8px var(--navbar-color);
 }
 
 .banner-container {
@@ -144,7 +165,7 @@ body {
   align-items: center;
 }
 
-.banner-title {
+.banner h1 {
   background: none;
   color: var(--title-color);
 
@@ -156,7 +177,7 @@ body {
   text-shadow: 0px 0px 10px var(--title-shadow);
 }
 
-.banner-smalltitle {
+.banner h2 {
   background: none;
   color: var(--title-color);
 
@@ -169,7 +190,7 @@ body {
   text-shadow: 0px 0px 10px var(--title-shadow);
 }
 
-.banner-text {
+.banner p {
   background: none;
   color: var(--text-color);
 
@@ -206,6 +227,8 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
 
+  box-shadow: 0px 0px 10px var(--title-shadow);
+
   transition: all 0.25s ease 0s;
 }
 
@@ -220,7 +243,7 @@ body {
 
 /* -- ABOUT -- */
 .about {
-  --x-padding: 20%;
+  --x-padding: 15%;
 
   color: rgb(255, 255, 255);
 
@@ -233,26 +256,104 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 
-  justify-items: stretch;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about p {
+  font-size: 1.25rem;
+  font-weight: 500;
+
+  margin-top: -1.4rem;
+  line-height: 2.3rem;
 }
 
 .about-container {
   background: none;
 }
 
-.about-title {
-  font-size: 2.5rem;
+/* -- ABOUT CARDS (FOR OTHER INFORMATION) -- */
+.aboutcard {
+  width: 250px;
+  height: 200px;
+
+  background: rgb(255, 255, 255);
+
+  color: rgb(0, 0, 0);
   font-weight: bold;
-  text-transform: uppercase;
+  font-size: 3em;
+  text-align: center;
+
+  border-radius: 5px;
+
+  white-space: normal;
+  overflow: auto;
 }
 
-.about-text {
-  font-size: 1.25rem;
-  font-weight: 500;
+.aboutcard-title {
+  --total-height: 40px;
 
-  margin-top: -1.4rem;
-  line-height: 2.3rem;
+  height: var(--total-height);
+  padding-left: 10px;
+
+  background-color: rgb(22, 22, 22);
+  border-radius: 5px;
+
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+
+  line-height: var(--total-height);
+}
+
+.aboutcard-title img {
+  background: none;
+
+  display: inline;
+  float: right;
+  margin-top: 6px;
+  margin-right: 10px;
+
+  height: auto;
+  width: 25px;
+}
+
+.aboutcard-body {
+  background: none;
+}
+
+.aboutcard-body h1 {
+  background: none;
+
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: left;
+  text-transform: initial;
+
+  margin-top: 4px;
+}
+
+.aboutcard-body ul {
+  background: none;
+  margin-top: -16px;
+}
+
+.aboutcard-body li {
+  background: none;
+  list-style-type: "- ";
+
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5rem;
 }
 
 /* -- MOBILE CHANGES -- */
