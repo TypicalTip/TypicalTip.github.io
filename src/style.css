@@ -39,7 +39,7 @@ hr {
 /* -- NAVBARS -- */
 .navbar {
   /* -- Variables -- */
-  --navbar-color: rgb(22, 22, 22);
+  --navbar-color: rgb(0, 0, 0);
 
   /* -- Navbar -- */
   background-color: var(--navbar-color);
@@ -354,6 +354,43 @@ hr {
   font-weight: 600;
   text-align: left;
   line-height: 1.5rem;
+}
+
+.aboutcard-body a {
+  background: none;
+  color: rgb(0, 0, 0);
+
+  font-weight: bold;
+
+  transition: all 0.25s ease 0s;
+}
+
+.aboutcard-body a:visited {
+  color: rgb(84, 70, 160);
+}
+
+.bottom-navbar {
+  --bottom-navbar-color: rgb(0, 0, 0);
+
+  background-color: var(--bottom-navbar-color);
+  box-shadow: 0 1px 8px var(--bottom-navbar-color);
+
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding: 1rem 3.125rem;
+}
+
+.bottom-navbar h1 {
+  background: none;
+
+  color: rgb(108, 117, 125);
+
+  font-size: 0.875em;
+  font-weight: lighter;
 }
 
 /* -- MOBILE CHANGES -- */
